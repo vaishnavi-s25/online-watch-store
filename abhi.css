@@ -1,0 +1,349 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+ 
+ *{
+	box-sizing:border-box;
+	font-family: 'Open Sans', sans-serif;
+ }
+ 
+ body{
+line-height: 1.5;
+
+ }
+
+.card-wrapper{
+   
+  max-width: 1100px;
+    
+  margin: 20px auto;
+}
+
+img{
+    width: 100%;
+    display: block;
+	
+}
+
+
+.img-display{
+	overflow:hidden;
+	
+	/*width:100%;
+	height:100%;
+	background:url(shoe_1.jpg);
+	
+	animation : slide 20s infinite;
+	overflow:hidden;
+    object-fit:cover;
+	*/
+	
+	/*background:url(F:\WT Project\Sneaker Shop.html\shoe_1.jpg);
+	animation : slide 5s infinite;*/
+}
+
+
+.img-showcase{
+	display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+	
+	
+}
+
+
+.img-showcase img{
+    min-width: 100%;
+}
+
+
+.img-select{
+    display: flex;
+}
+
+.img-item{
+    margin: 0.3rem;
+}
+
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+
+.img-item:hover{
+    opacity: 0.8;
+}
+
+
+.product-content{
+    padding: 0.5px 0.5px;
+}
+
+
+.product-title{
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 3rem 2rem 0 0;
+}
+
+.product-title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #12263a;
+}
+
+.product-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+	margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: black;     /*#256eff;*/
+    color: wheat;
+    padding: 0 0.3rem;
+    transition: all 0.5s ease;
+}
+
+
+.product-link:hover{
+    opacity: 0.9;
+}
+
+
+.product-rating{
+    color: #ffc107;
+}
+
+
+.product-rating span{
+    font-weight: 600;
+    color: #252525;
+}
+
+
+.product-price{
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+.product-price span{
+    font-weight: 400;
+}
+
+
+.last-price span{
+    color: Black/*#f64749*/;
+    text-decoration: line-through;
+}
+
+
+.new-price span{
+    color: #256eff;
+}
+
+
+.product-detail h2{
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+}
+
+
+.product-detail p{
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+
+
+.product-detail ul{
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+
+.product-detail ul li{
+    margin: 0;
+    list-style: none;
+    background: url(checked.jpg) left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+
+.product-detail ul li span{
+    font-weight: 400;
+}
+
+
+.purchase-info{
+    margin: 1.5rem 0;
+}
+
+.purchase-info input,
+.purchase-info .btn{
+    border: 1.5px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.purchase-info input{
+    width: 60px;
+}
+
+.purchase-info .btn{
+    cursor: pointer;
+    color: wheat;
+}
+
+
+.purchase-info .btn:first-of-type{
+    background: Black/*#256eff*/;
+}
+
+
+.purchase-info .btn:last-of-type{
+    background:Black /*#f64749*/;
+}
+
+
+.purchase-info .btn:hover{
+    opacity: 0.9;
+}
+
+
+@media screen and (min-width: 992px){
+    .card{
+        display: grid;
+       grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+footer{
+    position: absolute;
+    top:280%;
+    padding-left: 10%;
+    display:flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  footer .col{
+    display:flex;
+    flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20px;
+  }
+  
+  footer h5{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: large;
+  }
+  
+  footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+  
+  }
+  
+  
+  footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    
+  }
+  
+  footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom:10px;
+  }
+  
+  footer .follow{
+    margin-top: 20px ;
+  }
+  
+  footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor:pointer;
+  }
+  
+  footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+  }
+  
+  footer .install img{
+    margin: 10px 0 15px 0;
+  }
+  
+  footer .follow i:hover, footer a:hover{
+    color: #088178;
+  }
+  
+  footer .copyright{
+    width:100%;
+    text-align: center;
+  }
+  
+
+/*
+@keyframes slide{
+	25%{
+		background:url(shoe_2.jpg);
+		
+	}
+	
+	50%{
+		background:url(shoe_2.jpg);
+		
+	
+	}
+	75%{
+		background:url(shoe_3.jpg);
+		
+	}
+	100%{
+		background:url(shoe_4.jpg);
+		
+	
+	}
+}*/

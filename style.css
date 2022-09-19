@@ -1,0 +1,257 @@
+.heading{
+    font-size: larger;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+*{
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+.top{
+    position: relative;
+    background-color: black;
+     color: white;
+     top: 0;
+    padding: 0.3%;
+   font-weight: lighter;
+  
+  
+}
+
+  .top a{
+        text-decoration: none;
+        color: white;
+    }
+
+   
+  .top h1{
+       font-family: 'Poppins', sans-serif;
+       font-size: 30px;
+       letter-spacing: -3px;
+ }
+ 
+  .toplist{
+      position: absolute;
+      left: 30%;
+      top:30%;
+      font-family: 'Poppins', sans-serif;
+       font-size: 20px;
+       font-weight:400;
+  }
+  .toplist li{
+      display: inline;
+      margin-left: 60px;
+    
+  }
+
+  .toplist li:hover{
+     font-weight: bold;
+     font-size: 22px;
+      transition-duration: 200ms;
+      cursor: pointer;
+  }
+
+    ::-webkit-scrollbar{
+        width: 15px;
+        background: black ;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: white;
+        border-radius: 1px;
+
+    }
+
+
+  <!---Product list --->
+
+
+.product-list{
+    background-color: #dcdde1;
+    padding: 3em;
+}
+
+.product-list .card{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    
+    padding: 1em;
+    box-shadow: 0px 10px 5px #636e72;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+}
+
+.card .title{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.card .text{
+    text-align: left;
+    margin-left: 2em ;
+    margin-bottom: 0.5em;
+    font-size: 14px;
+}
+
+.buy-button{
+ background-color: #ced6e0;
+ border: none;
+ padding: 1em;
+ border-radius: 5px;
+ font-weight: bold;
+ width:100%;
+ cursor: pointer;
+}
+
+.buy-button:hover{
+   box-shadow: 0px 5px 5px #636e72;
+   color: #1e3799; 
+   }
+
+   .product-container{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       grid-column-gap: 20px;
+       grid-row-gap: 20px;
+   }
+
+   .card img{
+       transition: 0.5s ease;
+   }
+
+   .card:hover img{
+       transform: scale(1.1);
+       transition: 1s ease;
+   }
+
+   .card .details{
+       position: relative;
+       top: 50px;
+       transition: 2s ease;
+       visibility: hidden;
+       opacity: 0;
+   }
+
+   .card:hover .details{
+       opacity: 1;
+       visibility: visible;
+       top:0px;
+       transition: 2s ease;
+   }
+
+   .text,
+   .title{
+       opacity: 1;
+       transition: 0.5s ease;
+   }
+  
+   .card:hover .title ,
+   .card:hover .text{ 
+       opacity:0;
+       transition: 1s ease;
+
+   }
+
+   .page-btn{
+    margin: 25px 50px 75px 1100px;
+       
+
+   }
+
+   .page-btn span{
+       display: inline-block;
+       border: 1px solid #1e3799;
+       margin-left: 10px;
+       width:40px;
+       height: 50px;
+       text-align: center;
+       line-height: 40px;
+       cursor: pointer;
+     
+   }
+
+   .page-btn span:hover{
+       background: #636e72;
+       color: #fff;
+   }
+
+   footer{
+    position: absolute;
+    top:280%;
+    padding-left: 10%;
+    display:flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  footer .col{
+    display:flex;
+    flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20px;
+  }
+  
+  footer h5{
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: large;
+  }
+  
+  footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+  
+  }
+  
+  
+  footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    
+  }
+  
+  footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:#222;
+    margin-bottom:10px;
+  }
+  
+  footer .follow{
+    margin-top: 20px ;
+  }
+  
+  footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor:pointer;
+  }
+  
+  footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+  }
+  
+  footer .install img{
+    margin: 10px 0 15px 0;
+  }
+  
+  footer .follow i:hover, footer a:hover{
+    color: #088178;
+  }
+  
+  footer .copyright{
+    width:100%;
+    text-align: center;
+  }
+  

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+   <link rel="stylesheet" href="indexcss.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/652c7e1a88.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <style>
+    .StoreSection{
+        background-color:black ;
+    }
+
+    .StoreSection h1{
+    
+        color: white;
+        font-family: 'Poppins', sans-serif;
+       font-size: 35px;
+       width: 100%;
+       height:450px ;
+    }
+    .StoreSection a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .storecardholder{
+        position: absolute;
+        top:170%;
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .card2{
+        background-color: black;
+        width: 80%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .card2 img{
+        top:30%;
+        padding-left: 30px;
+        height: 80%;
+        width: 100%;
+    }
+    .card2 h2{
+        position: absolute;
+        padding-left: 30px;
+        font-family: 'Poppins', sans-serif;
+       font-size: 50px;
+       background-color: white;
+       
+       top:50%;
+    }
+
+    .card2 h2:hover{
+        font-size: 60px;
+        transition-duration: 300ms;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="top">
+            <h1> <b> Watch Brand</b><br></h1>
+            <ul class="toplist">
+         <li><b>Home</b></li>
+                <li><a href="bucard.html"> Brand Watches</a></li>
+            
+                <li><a href="Mycart.php">My Cart</a></li>
+				<li><a href="logout.php">LogOut</a></li>
+              
+            </ul>
+       </div> 
+    <div id="slider">
+       <figure>
+              <img src="3.jfif" >
+            <img src="1.jfif" alt="">
+            <img src="2.jfif" alt="">
+            <img src="1.jfif" alt="">
+        </figure>
+    </div>
+
+
+    <div class="StoreSection" id="storeid"><
+      <br><br><br><br><br><br> <br> <h1>     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp <b>OFFICES</b></h1>
+        <div class="storecardholder">
+           
+            <div class="card2">
+                <a href="Mlocation.jsp"><img src="o1.JPG" alt="">
+                <h2>Mumbai</h2>
+            </div>
+            <div class="card2">
+                <a href="Plocation.jsp"><img src="o2.jpg" alt="">
+                <h2>Pune</h2></a>
+            </div>
+           <div class="card2">
+            <a href="Glocation.jsp"> <img src="o3.jpg" alt="">
+                 <h2>Goa</h2></a>
+           </div>
+        </br></br></br></br></br></br>
+        </div>
+    </div>
+ </div>
+
+
+   <!--Footer section-->
+
+   <footer class="section-p1" id="footer">
+     <div class="col">
+       <h5>E Printing Press</h5>
+       <h4>Contact</h4>
+       <p><strong>Address:  </strong>Yashwant Smruti, Ground Floor, Plot No 320,<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp  12th Rd, Near Madhu Park, Khar West,
+        Mumbai,<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp &nbsp  Maharashtra,Pin:- 400052</p>
+        <p><strong>Phone:  </strong>020-13548643,020-13548644</p>
+        <p><strong>Hours:  </strong>10:00-20:00,Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+
+          </div>
+        </div>
+     </div>
+     <div class="col">
+       <h4>About</h4>
+       <a href="#">About Us</a>
+       <a href="#">Delivery Information</a>
+       <a href="#">Privacy Policy</a>
+       <a href="#">Terms & Conditions</a>
+       <a href="#">Contact Us</a>
+     </div>
+
+     <div class="col">
+      <h4>My Account</h4>
+      <a href="login.jsp">Sign In</a>
+      <a href="cart.jsp">View Cart</a>
+   
+      
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store Or Google Play</p>
+      <div class="row">
+        <img src="app.jpg" alt="">
+        <img src="play.jpg" alt="">
+      </div>
+      <p>Secure Payment Gateways</p>
+      <img src="pay.png" alt="">
+    </div>
+    <div class="copyright">
+      <p><b>© 2022,E Printing Press Website</b></p>
+     
+    </div>
+
+   </footer>
+    <script>
+        let lim=0;
+        function left(){
+            if(lim<=2)
+            {
+                if(lim==0){
+                document.getElementById("cardid").style.cssText="left:-30%;";
+                }
+                if(lim==1){
+                document.getElementById("cardid").style.cssText="left:-60%;";
+                }
+                if(lim==2){
+                document.getElementById("cardid").style.cssText="left:-100%;";
+                }
+                lim++;
+             }
+        }
+        function right(){
+            if(lim>0)
+            {
+                if(lim==1){
+                document.getElementById("cardid").style.cssText="left:0%;";
+                }
+                if(lim==2){
+                document.getElementById("cardid").style.cssText="left:-30%;";
+                }
+                if(lim==3){
+                document.getElementById("cardid").style.cssText="left:-60%;";
+                }
+                lim--;
+              }
+        }
+    </script>
+</body>
+    
+</html>
